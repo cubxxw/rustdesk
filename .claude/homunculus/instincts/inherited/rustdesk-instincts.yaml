@@ -1,0 +1,298 @@
+# Instincts generated from https://github.com/cubxxw/rustdesk
+# Generated: 2026-05-02T02:00:18.383Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: rustdesk-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/cubxxw/rustdesk
+---
+
+# Rustdesk Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: feat
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: feat: option, enable-privacy-mode & enable-perm-change-in-accept-window (#14875)
+
+---
+id: rustdesk-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/cubxxw/rustdesk
+---
+
+# Rustdesk Commit Length
+
+## Action
+
+Write moderate-length commit messages (~80 characters)
+
+## Evidence
+
+- Average commit message length: 80 chars
+- Based on 1 commits
+
+---
+id: rustdesk-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/cubxxw/rustdesk
+---
+
+# Rustdesk Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: rustdesk-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/cubxxw/rustdesk
+---
+
+# Rustdesk Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: rustdesk-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/cubxxw/rustdesk
+---
+
+# Rustdesk Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: rustdesk-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/cubxxw/rustdesk
+---
+
+# Rustdesk Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: rustdesk-instinct-function-naming
+trigger: "When creating a new function in Rust code"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: cubxxw/rustdesk
+---
+
+# Rustdesk Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in files: consistent camelCase function names in src/
+
+---
+id: rustdesk-instinct-class-naming
+trigger: "When defining a new class or struct"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: cubxxw/rustdesk
+---
+
+# Rustdesk Instinct Class Naming
+
+## Action
+
+Name the class or struct using PascalCase
+
+## Evidence
+
+- Pattern in files: PascalCase for structs/enums in src/
+
+---
+id: rustdesk-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: cubxxw/rustdesk
+---
+
+# Rustdesk Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for the constant name
+
+## Evidence
+
+- Pattern in files: constants in SCREAMING_SNAKE_CASE in src/
+
+---
+id: rustdesk-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: cubxxw/rustdesk
+---
+
+# Rustdesk Instinct File Naming
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in files: file names in camelCase in src/
+
+---
+id: rustdesk-instinct-import-style
+trigger: "When importing modules in Rust code"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: cubxxw/rustdesk
+---
+
+# Rustdesk Instinct Import Style
+
+## Action
+
+Use relative imports
+
+## Evidence
+
+- Pattern in files: use of relative imports in src/
+
+---
+id: rustdesk-instinct-export-style
+trigger: "When exporting functions or modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: cubxxw/rustdesk
+---
+
+# Rustdesk Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in files: named exports in src/
+
+---
+id: rustdesk-instinct-git-commit-format
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: cubxxw/rustdesk
+---
+
+# Rustdesk Instinct Git Commit Format
+
+## Action
+
+Use the conventional commit format with a 'feat' prefix for features
+
+## Evidence
+
+- Seen in commit: 'feat: option, enable-privacy-mode & enable-perm-change-in-accept-window (#14875)'
+
+---
+id: rustdesk-instinct-commit-length
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: cubxxw/rustdesk
+---
+
+# Rustdesk Instinct Commit Length
+
+## Action
+
+Keep the commit message around 80 characters on average
+
+## Evidence
+
+- Pattern: averageLength: 80 in commit messages
+
+---
+id: rustdesk-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: cubxxw/rustdesk
+---
+
+# Rustdesk Instinct Test Location
+
+## Action
+
+Place tests in a separate directory from source code
+
+## Evidence
+
+- Pattern: testLocation: separate in folder structure
+
